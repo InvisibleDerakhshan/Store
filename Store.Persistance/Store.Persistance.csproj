@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Store.Application">
+      <HintPath>..\Store.Application\bin\Debug\net8.0\Store.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Store.Common">
+      <HintPath>..\Store.Application\bin\Debug\net8.0\Store.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Store.Domain">
+      <HintPath>..\Store.Domain\bin\Debug\net8.0\Store.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Store.Persistance">
+      <HintPath>bin\Debug\net8.0\Store.Persistance.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
